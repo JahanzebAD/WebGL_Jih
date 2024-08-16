@@ -6,8 +6,25 @@
     <title>Unity WebGL Player | Interaktion_Verschiebung</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
   </head>
   <body>
+<script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCCkCxpKZW2aAfE7gIcamnXIn2Q2n7ITgc",
+  authDomain: "verschiebung-interaktion.firebaseapp.com",
+  projectId: "verschiebung-interaktion",
+  storageBucket: "verschiebung-interaktion.appspot.com",
+  messagingSenderId: "926503810889",
+  appId: "1:926503810889:web:6bde438045a8e75c8fcc98"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
